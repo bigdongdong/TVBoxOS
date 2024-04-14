@@ -67,6 +67,9 @@ public class App extends MultiDexApplication {
         if (!Hawk.contains(HawkConfig.PLAY_TYPE)) {
             Hawk.put(HawkConfig.PLAY_TYPE, 1);
         }
+
+        Hawk.put(HawkConfig.API_URL, "https://jihulab.com/jinenge/tvbox/-/raw/main/1.json");
+        Hawk.put(HawkConfig.SEARCH_VIEW, 1); //搜索默认显示缩略图
     }
 
     public static App getInstance() {

@@ -374,6 +374,10 @@ public class SearchActivity extends BaseActivity {
                 bundle.putString("title", title);
                 jumpActivity(FastSearchActivity.class, bundle);
             }else {
+                //携带搜索词跳转，则直接显示结果
+                // TODO chenxiaodong : 2024/4/14
+                findViewById(R.id.llSearch).setVisibility(View.GONE);
+                findViewById(R.id.llWord).setVisibility(View.GONE);
                 search(title);
             }
         }
